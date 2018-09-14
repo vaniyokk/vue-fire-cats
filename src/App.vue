@@ -47,7 +47,7 @@
     <v-content>
       <router-view/>
     </v-content>
-    <v-navigation-drawer
+    <!-- <v-navigation-drawer
       temporary
       :right="right"
       v-model="rightDrawer"
@@ -62,14 +62,13 @@
           <v-list-tile-title>Switch drawer (click me)</v-list-tile-title>
         </v-list-tile>
       </v-list>
-    </v-navigation-drawer>
+    </v-navigation-drawer> -->
     <v-footer :fixed="fixed" app>
       <v-layout justify-center>
         <v-flex text-xs-center>
           <span>&copy; 2017</span>
         </v-flex>
       </v-layout>
-      
     </v-footer>
   </v-app>
 </template>
@@ -81,7 +80,7 @@ export default {
   data () {
     return {
       clipped: false,
-      drawer: true,
+      drawer: false,
       fixed: false,
       items: [{
         icon: 'bubble_chart',
@@ -92,6 +91,6 @@ export default {
       rightDrawer: false,
       title: 'FireCats'
     }
-  }
-}
+  },
+};
 </script>
