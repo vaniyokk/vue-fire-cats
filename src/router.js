@@ -11,7 +11,7 @@ export default new Router({
     {
       path: '/',
       name: 'home',
-      component: HomeView,
+      component: HomeView
     },
     {
       path: '/detail/:id',
@@ -19,12 +19,18 @@ export default new Router({
       // route level code-splitting
       // this generates a separate chunk (about.[hash].js) for this route
       // which is lazy-loaded when the route is visited.
-      component: () => import(/* webpackChunkName: "about" */ './views/DetailView.vue'),
+      component: () =>
+        import(/* webpackChunkName: "about" */ './views/DetailView.vue')
     },
     {
       path: '/post',
       name: 'post',
-      component: () => import('./views/PostView.vue'),
+      component: () => import('./views/PostView.vue')
     },
-  ],
+    {
+      path: '/camera',
+      name: 'camera',
+      component: () => import('./views/CameraView.vue')
+    }
+  ]
 });

@@ -6,10 +6,10 @@ const config = {
   databaseURL: 'https://firetest-vaniyokk.firebaseio.com',
   projectId: 'firetest-vaniyokk',
   storageBucket: 'firetest-vaniyokk.appspot.com',
-  messagingSenderId: '542350480056',
+  messagingSenderId: '542350480056'
 };
 firebase.initializeApp(config);
 
 export default {
-  database: firebase.database(),
+  database: firebase.database()
 };

@@ -7,15 +7,14 @@ import router from './router';
 import './registerServiceWorker';
 import firebase from './services/firebase';
 
-
 Vue.use(Vuefire);
 
 Vue.config.productionTip = false;
 
 new Vue({
   firebase: {
-    cat: firebase.database.ref('cat').orderByChild('created_at'),
+    cat: firebase.database.ref('cat').orderByChild('created_at')
   },
   router,
-  render: h => h(App),
+  render: h => h(App)
 }).$mount('#app');
